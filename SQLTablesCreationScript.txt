@@ -1,0 +1,94 @@
+create table VKFriends
+(
+    id bigint primary key ,
+    first_name varchar , 
+    last_name varchar , 
+    bdate varchar , 
+    photo varchar , 
+    city varchar , 
+    sex varchar , 
+    mobile_phone varchar , 
+    home_phone varchar , 
+    site varchar , 
+    home_town varchar , 
+    verified boolean , 
+    university_name varchar , 
+    faculty_name varchar , 
+    graduation varchar , 
+    education_form varchar , 
+    education_status varchar , 
+    relatives json , 
+    career json , 
+    universities json , 
+    schools json , 
+    status varchar , 
+    interests varchar , 
+    books varchar , 
+    tv varchar , 
+    quotes varchar , 
+    about varchar , 
+    games varchar , 
+    movies varchar , 
+    activities varchar , 
+    music varchar 
+);
+
+create table VKGeneralInfo
+(
+    id bigint primary key ,
+    first_name varchar , 
+    last_name varchar , 
+    bdate varchar , 
+    city varchar , 
+    sex varchar , 
+    home_town varchar , 
+    verified boolean 
+);
+
+create table VKContactInfo
+(
+    id bigint primary key ,
+    first_name varchar , 
+    last_name varchar , 
+    mobile_phone varchar , 
+    home_phone varchar , 
+    site varchar 
+);
+
+create table VKEducationInfo
+(
+    id bigint primary key ,
+    university_name varchar , 
+    faculty_name varchar , 
+    graduation varchar , 
+    education_form varchar , 
+    education_status varchar , 
+    career json , 
+    universities json , 
+    schools json 
+);
+
+create table VKAboutInfo
+(
+    id bigint primary key ,
+    photo varchar , 
+    status varchar , 
+    interests varchar , 
+    books varchar , 
+    tv varchar , 
+    quotes varchar , 
+    about varchar , 
+    games varchar , 
+    movies varchar , 
+    activities varchar , 
+    music varchar 
+);
+
+create table VKRelativesInfo
+(
+    id bigint primary key ,
+    type varchar ,
+    birth_date varchar ,
+    name varchar ,
+    relation_id bigint
+);
